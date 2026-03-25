@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="autor" content="Nazar Neruk">
+    <title>Audi.com - the international Audi website</title>
+    <link rel="icon" type="image/x-icon" href="/audi.com/images/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="flex-center site-header">
+        <div id="header-logo" title="Home">
+            <a aria-label="Home" href="index.html" title="Home" class="navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="69" height="24" viewBox="0 0 69 24" fill="none">
+                    <path
+                        d="M57.0623 21.3142C54.9409 21.3142 52.9856 20.5922 51.422 19.3822C53.0087 17.3448 53.9585 14.7826 53.9585 12C53.9585 9.21768 53.0087 6.65544 51.422 4.61784C52.9856 3.408 54.9409 2.68584 57.0623 2.68584C62.1714 2.68584 66.3281 6.86424 66.3281 12C66.3281 17.136 62.1714 21.3142 57.0623 21.3142ZM36.3802 19.3822C37.9672 17.3448 38.917 14.7826 38.917 12C38.917 9.21768 37.9672 6.65544 36.3804 4.61784C37.9438 3.408 39.8997 2.68584 42.0208 2.68584C44.1421 2.68584 46.0975 3.408 47.6611 4.61784C46.0743 6.65544 45.1246 9.21768 45.1246 12C45.1246 14.7826 46.0743 17.3448 47.6611 19.3822C46.0975 20.5922 44.1421 21.3142 42.0208 21.3142C39.8997 21.3142 37.9438 20.5922 36.3802 19.3822ZM21.3387 19.3822C22.9257 17.3448 23.8754 14.7826 23.8754 12C23.8754 9.21768 22.9257 6.65544 21.3389 4.61784C22.9023 3.408 24.8581 2.68584 26.9792 2.68584C29.1003 2.68584 31.0562 3.408 32.6196 4.61784C31.0328 6.65544 30.083 9.21768 30.083 12C30.083 14.7826 31.0328 17.3448 32.6196 19.3822C31.0562 20.5922 29.1003 21.3142 26.9792 21.3142C24.8581 21.3142 22.9023 20.5922 21.3387 19.3822ZM2.6719 12C2.6719 6.86424 6.82861 2.68584 11.9377 2.68584C14.0588 2.68584 16.0147 3.408 17.578 4.61784C15.9913 6.65544 15.0415 9.21768 15.0415 12C15.0415 14.7826 15.9913 17.3448 17.578 19.3822C16.0147 20.5922 14.0588 21.3142 11.9377 21.3142C6.82861 21.3142 2.6719 17.136 2.6719 12ZM19.4585 17.4305C18.3619 15.9005 17.7134 14.0256 17.7134 12C17.7134 9.97464 18.3619 8.09952 19.4585 6.56952C20.5551 8.09952 21.2035 9.97464 21.2035 12C21.2035 14.0256 20.5551 15.9005 19.4585 17.4305ZM34.5 17.4305C33.4034 15.9005 32.7549 14.0256 32.7549 12C32.7549 9.97464 33.4034 8.09952 34.5 6.56952C35.5966 8.09952 36.2451 9.97464 36.2451 12C36.2451 14.0256 35.5966 15.9005 34.5 17.4305ZM49.5415 17.4305C48.4449 15.9005 47.7965 14.0256 47.7965 12C47.7965 9.97464 48.4449 8.09952 49.5415 6.56952C50.6381 8.09952 51.2866 9.97464 51.2866 12C51.2866 14.0256 50.6381 15.9005 49.5415 17.4305ZM57.0623 0C54.2135 0 51.5958 1.00968 49.5415 2.68968C47.4873 1.00968 44.8696 0 42.0208 0C39.1719 0 36.5542 1.00968 34.5 2.68968C32.4458 1.00968 29.8278 0 26.9792 0C24.1304 0 21.5127 1.00968 19.4585 2.68968C17.4042 1.00968 14.7863 0 11.9377 0C5.35526 0 0 5.3832 0 12C0 18.617 5.35526 24 11.9377 24C14.7863 24 17.4042 22.9906 19.4585 21.3103C21.5127 22.9906 24.1304 24 26.9792 24C29.8278 24 32.4458 22.9906 34.5 21.3103C36.5542 22.9906 39.1719 24 42.0208 24C44.8696 24 47.4873 22.9906 49.5415 21.3103C51.5958 22.9906 54.2135 24 57.0623 24C63.6447 24 69 18.617 69 12C69 5.3832 63.6447 0 57.0623 0Z"
+                        fill="white"></path>
+                </svg>
+            </a>
+        </div>
+
+        <nav>
+            <ul class="header-menu">
+                <li>
+                    <a href="#" class="arrow">Company</a>
+                    <ul class="header-submenu">
+                        <li><a href="#">Overview</a></li>
+                        <li>
+                            <a href="#">Strategy</a>
+                            <ul class="header-submenu">
+                                <li><a href="#">Atack</a></li>
+                                <li><a href="#">Defence</a></li>
+                                <li><a href="#">Smart</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Investor</a></li>
+                        <li><a href="#">Compiance and risks</a></li>
+                        <li><a href="#">Press and media</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="arrow">Innovetion</a>
+                    <ul class="header-submenu">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Strategy</a></li>
+                        <li><a href="#">Future technologies</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Digitalization</a></li>
+                        <li><a href="#">Academic Cooperation</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="arrow">Sustainebility</a>
+                    <ul class="header-submenu">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Sustainability Concept</a></li>
+                        <li><a href="#">Sustainability Reports</a></li>
+                        <li><a href="#">E - Environment & Resources</a></li>
+                        <li><a href="#">S - People & Society</a></li>
+                        <li><a href="#">G - Governance</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="arrow">Careers</a>
+                    <ul class="header-submenu">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Job portal</a></li>
+                        <li><a href="#">Working at Audi</a></li>
+                        <li><a href="#">Pupils</a></li>
+                        <li><a href="#">Students</a></li>
+                        <li><a href="#">Graduates</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="arrow">Audi in sport</a>
+                    <ul class="header-submenu">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Audi in motorsport</a></li>
+                        <li><a href="#">Audi in football</a></li>
+                        <li><a href="#">Audi in winter sports</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <a href="#" title="Search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M22 22L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="main-banner">
+        <img src="images/original/revolut-main.png" alt="Audi Formula 1 Banner" class="banner-image">
+        <div class="content">
+            <h1>Formula 1</h1>
+            <p>Audi will compete in the premier class of motorsport in 2026</p>
+            <a href="#">Discover more</a>
+        </div>
+    </div>
+
+    <div class="flex-center main-topics-section">
+        <h2>Current topics from the world of Audi</h2>
+        <div class="main-topics-grid">
+            <div class="main-topic-card">
+                <img class="main-img-shadow" src="images/original/topic-photo-1.png">
+                <p>13.02.2026</p>
+                <h3>Stress-free driving thanks to smart early detection</h3>
+                <p>Smart predictive maintenance detects early wear, preventing downtime and ensuring a
+                    stress-free Audi drive.</p>
+                <a href="#">Read more
+                    <svg class="audi-icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.5 18L15.5 12L9.5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"
+                            stroke-linejoin="miter" />
+                    </svg>
+                </a>
+            </div>
+            <div class="main-topic-card">
+                <img class="main-img-shadow" src="images/original/topic-photo-2.png">
+                <p>14.01.2026</p>
+                <h3>Driving the Future: Software at the Core of Mobility</h3>
+                <p>Dr. Mario De Felice, Vice President Software Engineering & Vehicle Digital Platforms at
+                    Audi, in an interview.</p>
+                <a href="#">Read more
+                    <svg class="audi-icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.5 18L15.5 12L9.5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"
+                            stroke-linejoin="miter" />
+                    </svg>
+                </a>
+            </div>
+            <div class="main-topic-card">
+                <img class="main-img-shadow" src="images/original/topic-photo-3.png">
+                <p>01.12.2025</p>
+                <h3>Up-to-Date Thanks to over-the-air software updates.</h3>
+                <p>Sophia Schupritt, Digital Lifecycle Management at Audi, in an interview.</p>
+                <a href="#">Read more
+                    <svg class="audi-icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.5 18L15.5 12L9.5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"
+                            stroke-linejoin="miter" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-center">
+        <div class="main-promo-grid">
+            <div class="main-promo-card main-promo-large main-img-shadow">
+                <img src="images/original/promo-photo1.png">
+                <div class="main-promo-text">
+                    <h3>Innovation</h3>
+                    <a href="#" class="btn-inverted">Read more</a>
+                </div>
+            </div>
+
+            <div class="main-promo-card main-img-shadow">
+                <img src="images/original/promo-photo2.png">
+                <div class="main-promo-text">
+                    <h3>E-Mobility</h3>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <div class="main-promo-card main-img-shadow">
+                <img src="images/original/promo-photo3.png">
+                <div class="main-promo-text">
+                    <h3>Artificial Intelligence</h3>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-center">
+        <div class="main-promo-grid">
+            <div class="main-promo-card main-promo-large main-img-shadow">
+                <img src="images/original/promo-photo4.png">
+                <div class="main-promo-text">
+                    <h3>Sustainability</h3>
+                    <a href="#" class="btn-inverted">Read more</a>
+                </div>
+            </div>
+
+            <div class="main-promo-card main-img-shadow">
+                <img src="images/original/promo-photo5.png">
+                <div class="main-promo-text">
+                    <h3>Everyone pitches in</h3>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <div class="main-promo-card main-img-shadow">
+                <img src="images/original/promo-photo6.png">
+                <div class="main-promo-text">
+                    <h3>Sustainebility Report 2024</h3>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-center">
+        <div class="main-promo-grid">
+            <div class="main-promo-card main-promo-large main-img-shadow">
+                <video controls muted loop playsinline class="main-video-bg">
+                    <source src="images/original/promo-video7.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="main-promo-text">
+                    <h3>Careers</h3>
+                    <a href="#" class="btn-inverted">Read more</a>
+                </div>
+            </div>
+
+            <div class="main-promo-card main-img-shadow">
+                <img src="images/original/promo-photo8.png">
+                <div class="main-promo-text">
+                    <h3>Teach-Stories</h3>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <div class="main-promo-card main-img-shadow">
+                <img src="images/original/promo-photo9.png">
+                <div class="main-promo-text">
+                    <h3>Audi Spirit</h3>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-center main-banner no-margin">
+        <img src="images/copy/revoult-main_2.png" alt="Audi Formula 1 Banner" class="banner-image">
+        <div class="content">
+            <h1>Formula 1</h1>
+            <p>Audi will compete in the premier class of motorsport in 2026</p>
+            <a href="#">Discover more</a>
+        </div>
+    </div>
+
+    <div class="flex-center main-topics-section">
+        <h2>Press releases</h2>
+        <div class="main-topics-grid">
+            <div class="main-press-card">
+                <img src="images/original/topic-photo-second-1.png">
+                <h3>Going big Down Under: Audi makes its Formula 1 debut</h3>
+                <a href="#">To the press release
+                    <svg class="audi-icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.5 18L15.5 12L9.5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"
+                            stroke-linejoin="miter" />
+                    </svg>
+                </a>
+                <p>Audi RS 5 Avant: Fuel consumption (weighted, combined): 4.5-3.9 l/100 km (52.3-60.3 US mpg)
+                    (preliminary values); power consumption (weighted, combined): 18.7-17.8 kWh/100 km (preliminary
+                    values); CO2 emissions (weighted, combined): 102-88 g/km (164.2-141.6 g/mi) (preliminary values);
+                    CO2 class (weighted, combined): C-B (preliminary values); Fuel consumption on discharged battery
+                    (combined): 10.2-9.6 l/100 km (23.1-24.5 US mpg) (preliminary values); CO2 class on discharged
+                    battery: G (preliminary values)</p>
+            </div>
+            <div class="main-press-card">
+                <img src="images/original/topic-photo-second-2.png">
+                <h3>The new Audi RS 5 is put to the test in Morocco</h3>
+                <a href="#">To the press release
+                    <svg class="audi-icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.5 18L15.5 12L9.5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"
+                            stroke-linejoin="miter" />
+                    </svg>
+                </a>
+                <p>Audi RS 5 Sedan: Fuel consumption (weighted, combined): 4.3-3.8 l/100 km (54.7-61.9 US mpg)
+                    (preliminary values); power consumption (weighted, combined): 18.4-17.7 kWh/100 km (preliminary
+                    values); CO2 emissions (weighted, combined): 98-86 g/km (157.7-138.4 g/mi) (preliminary values); CO2
+                    class (weighted, combined): C-B (preliminary values); Fuel consumption on discharged battery
+                    (combined): 10.0-9.5 l/100 km (23.5-24.8 US mpg) (preliminary values); CO2 class on discharged
+                    battery: G (preliminary values)
+
+                    Audi RS 5 Avant: Fuel consumption (weighted, combined): 4.5-3.9 l/100 km (52.3-60.3 US mpg)
+                    (preliminary values); power consumption (weighted, combined): 18.7-17.8 kWh/100 km (preliminary
+                    values); CO2 emissions (weighted, combined): 102-88 g/km (164.2-141.6 g/mi) (preliminary values);
+                    CO2 class (weighted, combined): C-B (preliminary values); Fuel consumption on discharged battery
+                    (combined): 10.2-9.6 l/100 km (23.1-24.5 US mpg) (preliminary values); CO2 class on discharged
+                    battery: G (preliminary values)</p>
+            </div>
+            <div class="main-press-card">
+                <img src="images/original/topic-photo-second-3.png">
+                <h3>Warning: scam in the used-car trade</h3>
+                <a href="#">To the press release
+                    <svg class="audi-icon-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.5 18L15.5 12L9.5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"
+                            stroke-linejoin="miter" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <button class="main-media-btn">To the Audi MediaCenter</button>
+    </div>
+
+    <div class="flex-center main-models-section">
+        <div><img src="images/original/topic-photo-third.png"></div>
+        <div><span>At Audi you'll find the right vehicle for every requirement</span>
+            <p>Sporty, luxurious, or compact - at Audi you will find the right vehicle for every requirement. Discover
+                and configure our series models now.</p>
+            <a>Discover all models</a>
+            <p class="main-models-note">Power consumption (combined): 18.6-17.7 kWh/100km; CO₂ emissions (combined): 0
+                g/km;
+                CO₂ emission class: A</p>
+        </div>
+    </div>
+
+</body>
+
+<footer class="site-footer">
+    <div class="flex-center">
+
+        <div class="back-to-top">
+            <a href="#">
+                <span>back to top</span>
+                <svg class="audi-arrow-up" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 15L12 9L18 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"
+                        stroke-linejoin="miter" />
+                </svg>
+            </a>
+        </div>
+
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Topics</h3>
+                <ul>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Innovation</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Audi in sport</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>AUDI AG</h3>
+                <ul>
+                    <li><a href="#">Audi Report 2025</a></li>
+                    <li><a href="#">Documents & Policies</a></li>
+                    <li><a href="#">Financial Calendar</a></li>
+                    <li><a href="#">Management</a></li>
+                    <li><a href="#">Locations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">myAudi</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Job portal</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-flex">
+                <span class="copyright">© 2026 AUDI AG. All rights reserved</span>
+
+                <ul class="legal-links">
+                    <li><a href="#">Legal notice</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Whistleblower System</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Cookie Consent Options</a></li>
+                </ul>
+
+                <div class="lang-selector">
+                    <div class="lang-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <path
+                                d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                        English
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </div>
+                    <ul class="lang-dropdown">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Deutsch</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-notice">
+                Notice: All consumption and emission values are based on the characteristics of the German market.
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+</html>

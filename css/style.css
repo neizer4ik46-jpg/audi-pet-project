@@ -1,0 +1,734 @@
+@font-face {
+    font-family: 'AudiType';
+    src: url('../fonts/auditype_extendednormal.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AudiTypeBold';
+    src: url('../fonts/auditype_extendedbold.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: hsla(216, 23%, 8%, 1);
+    color: white;
+    font-family: 'AudiType', sans-serif;
+}
+
+.flex-center {
+    width: 1900px;
+    padding: 0px 96px;
+}
+
+/* Header */
+.site-header {
+    font-size: 14px;
+    /* font-family: 'AudiType', sans-serif; */
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* justify-content: flex-start; */
+    justify-content: flex-start;
+    height: 72px;
+    z-index: 100;
+    position: relative;
+    background-color: #020203;
+}
+
+.site-header #header-logo a:hover {
+    background: none;
+}
+
+.site-header .header-menu {
+    display: flex;
+    margin-left: 15px;
+}
+
+.site-header .header-menu .arrow::after {
+    content: " \25BE";
+}
+
+.site-header .header-menu .arrow:hover {
+    background: none;
+}
+
+.site-header .header-menu li {
+    position: relative;
+    width: 200px;
+}
+
+.site-header .header-menu a {
+    color: #fcfcfdb3;
+    text-decoration: none;
+    padding: 15px 1px;
+    display: block;
+    /* font-family: 'AudiType', sans-serif; */
+}
+
+.site-header .header-menu a:hover {
+    color: #fcfcfd;
+    background-color: darkolivegreen;
+    transition: 0.2s;
+}
+
+.site-header .header-submenu {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    display: none;
+    text-align: left;
+}
+
+.site-header li:hover .header-submenu {
+    display: block;
+}
+
+.site-header .header-submenu a {
+    background-color: black;
+    color: white;
+    border-bottom: 0.5px solid gray;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* font-family: 'AudiType', sans-serif; */
+}
+
+.site-header .header-submenu a:hover {
+    font-weight: bold;
+    color: burlywood;
+    background-color: darkolivegreen;
+    transition: 0.2s;
+    border-bottom: 0.5px solid orange;
+}
+
+.site-header .header-submenu li {
+    position: relative;
+}
+
+.site-header .header-submenu .header-submenu {
+    top: 0;
+    left: 100%;
+}
+
+.site-header .search {
+    margin-left: auto;
+}
+
+.site-header .search a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+
+.site-header .search a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Header END */
+
+/* Main */
+
+/* BANNER-REVOLUT */
+.main-banner {
+    position: relative;
+    height: 800px;
+    background-color: #020203;
+    margin-bottom: 90px;
+}
+
+.main-banner.no-margin {
+    margin-bottom: 0;
+}
+
+.main-banner img.banner-image {
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+}
+
+.main-banner .content {
+    position: absolute;
+    bottom: 75px;
+    left: 100px;
+}
+
+.main-banner .content h1 {
+    font-size: 44px;
+    line-height: 64px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.main-banner .content h1::after {
+    content: "\00AE";
+    font-size: 35px;
+    vertical-align: top;
+}
+
+.main-banner .content p {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.main-banner .content a {
+    display: block;
+    border: 0px;
+    color: rgb(252, 252, 253);
+    width: 170px;
+    text-align: center;
+    background-color: rgb(101, 112, 129);
+    border-radius: 999px;
+    font-size: 14px;
+    font-family: 'AudiType', sans-serif;
+    padding: 14px 24px;
+    margin-top: 20px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.main-banner .content a:hover {
+    background-color: rgb(44, 52, 63);
+    transition: 0.3s;
+}
+
+.main-banner-note {
+    padding-top: 24px;
+    color: rgba(252, 252, 253, 0.7);
+    font-family: 'AudiType', sans-serif;
+    letter-spacing: 0px;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    font-stretch: 105%;
+    text-align: left;
+}
+
+/* END BANNER-REVOLUT */
+
+/* TOPIC-INFO */
+.main-topics-section {
+    padding-top: 40px;
+    margin-bottom: 120px;
+}
+
+.main-topics-section h2 {
+    font-size: 36px;
+    line-height: 52px;
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+.main-topics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    gap: 15px;
+}
+
+.main-topic-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-topic-card img {
+    object-fit: cover;
+    border: 1px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.main-topic-card p {
+    color: #fcfcfdb3;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    font-stretch: 105%;
+    line-height: 24px;
+}
+
+.main-topic-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: rgb(255, 255, 255);
+}
+
+.main-topics-grid a {
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 8px;
+    font-stretch: 105%;
+    line-height: 24px;
+    height: 26px;
+    padding-bottom: 2px;
+    color: rgb(252, 252, 253);
+    display: inline-block;
+    position: relative;
+    min-height: 24px
+}
+
+.main-topics-grid a:hover {
+    color: rgba(252, 252, 253, 0.7);
+    transition: 0.25s;
+    text-decoration-color: rgba(252, 252, 253, 0.7);
+}
+
+.audi-icon-arrow {
+    position: absolute;
+    padding-left: 10px;
+    color: rgb(252, 252, 253);
+    width: 24px;
+    height: 24px;
+}
+
+.audi-icon-arrow:hover {
+    color: rgba(252, 252, 253, 0.7);
+    transition: 0.3s;
+}
+
+/* TOPIC-INFO END */
+
+/* PROMO GRID */
+.main-promo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 350px);
+    gap: 20px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.main-promo-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 40px;
+    z-index: 1;
+}
+
+.main-promo-large {
+    grid-row: span 2;
+}
+
+.main-promo-card img,
+.main-promo-card video,
+.main-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main-img-shadow::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.main-promo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.main-promo-text h3 {
+    font-size: 36px;
+    line-height: 1.2;
+    color: rgb(252, 252, 253);
+    font-stretch: 130%;
+    font-weight: 400;
+    margin: 0;
+}
+
+.main-promo-text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-stretch: 105%;
+    color: rgb(252, 252, 253);
+    text-decoration: none;
+    padding: 12px 24px;
+    min-height: 48px;
+    background-color: rgb(24, 29, 37);
+    border-radius: 999px;
+    transition: 0.25s;
+    height: 48px;
+}
+
+.main-promo-text a:hover {
+    background-color: rgb(101, 112, 129);
+}
+
+.main-promo-text a.btn-inverted {
+    background-color: rgb(101, 112, 129); /* Ставим тот цвет, что был при ховере */
+}
+
+.main-promo-text a.btn-inverted:hover {
+    background-color: rgb(24, 29, 37); /* А при наведении делаем темным, как было в базе */
+}
+
+/* PROMO GRID END */
+
+/* TOPIC GRIDS 2 */
+.main-press-card p {
+    color: rgba(252, 252, 253, 0.7);
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    font-stretch: 105%;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    margin-top: 24px;
+}
+
+.main-press-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    margin-top: 24px;
+    color: rgb(255, 255, 255);
+    line-height: 36px;
+    font-stretch: 130%;
+}
+
+.main-media-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto 0;
+    background-color: rgb(101, 112, 129);
+    border: 1px solid rgb(101, 112, 129);
+    border-radius: 999px;
+    padding: 8px 20px;
+    font-size: 12.5px;
+    min-height: 48px;
+    font-stretch: 105%;
+    letter-spacing: 0.2px;
+    color: rgb(252, 252, 253);
+    font-family: 'AudiType', sans-serif;
+    cursor: pointer;
+    transition: 0.25s;
+    white-space: nowrap;
+}
+
+.main-media-btn:hover {
+    background-color: rgb(44, 52, 63);
+}
+
+/* TOPIC GRIDS 2 END*/
+
+/* TOPIC GRIDS 3  */
+.main-models-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 72px;
+    align-items: center;
+    font-family: 'AudiType', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 32px;
+    margin-bottom: 72px;
+}
+
+.main-models-section img {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+}
+
+.main-models-section span {
+    display: block;
+    font-size: 36px;
+    line-height: 52px;
+    font-stretch: 130%;
+    color: rgb(252, 252, 253);
+    margin-bottom: 16px;
+}
+
+.main-models-section p {
+    margin: 0px;
+    color: rgba(252, 252, 253, 0.7);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    font-stretch: 105%;
+}
+
+.main-models-section a {
+    display: inline-flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 40px;
+    background-color: rgb(24, 29, 37);
+    border: 0.5px solid rgb(101, 112, 129);
+    border-radius: 999px;
+    padding: 16px 32px;
+    font-size: 14px;
+    font-stretch: 105%;
+    font-weight: 400;
+    height: 56px;
+    min-height: 56px;
+    line-height: 20px;
+    color: rgb(252, 252, 253);
+    cursor: pointer;
+    transition: 0.25s;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.main-models-section a:hover {
+    background-color: rgb(44, 52, 63);
+}
+
+/* TOPIC GRIDS 3 END */
+
+/* FOOTER */
+.site-footer {
+    background-color: rgb(2, 2, 3);
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 150px;
+    font-family: 'AudiType', sans-serif;
+}
+
+.back-to-top {
+    text-align: right; 
+    margin-bottom: 60px;
+}
+
+.back-to-top a {
+    display: inline-block;
+    font-size: 12px;
+    color: rgb(252, 252, 253);
+    text-decoration: none;
+    height: 24px;
+    font-stretch: 105%;
+    font-weight: 400;
+    transition: 0.25s;
+    letter-spacing: 0.5px;
+}
+
+.back-to-top a:hover {
+    color: rgba(252, 252, 253, 0.7);
+}
+
+.back-to-top a span,
+.back-to-top a svg {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.back-to-top a span {
+    margin-right: 12px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 40px;
+}
+
+.footer-col h3 {
+    font-size: 20px; 
+    font-weight: 400; 
+    margin-bottom: 32px; 
+    color: rgb(252, 252, 253);
+    line-height: 32px;
+    font-stretch: 130%;
+    font-family: 'AudiType', sans-serif;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col li {
+    margin-bottom: 20px;
+}
+
+.footer-col a {
+    font-size: 13px;
+    color: rgba(252, 252, 253); 
+    text-decoration: none;
+    font-stretch: 105%;
+    font-weight: 400;
+    line-height: 24px;
+    transition: 0.25s;
+}
+.footer-col a:hover {
+    color: rgb(252, 252, 253, 0.7);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 32px; 
+    padding-top: 40px;
+}
+
+.footer-bottom-flex {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    /* margin-top: 24px; */
+}
+
+.copyright {
+    color: rgba(252, 252, 253, 0.7);
+    font-size: 13px; 
+    font-weight: 400;
+    margin-right: 24px; 
+}
+
+.legal-links {
+    display: flex;
+    gap: 20px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.legal-links a {
+    color: rgb(252, 252, 253); 
+    font-size: 12px;
+    height: 26px;
+    min-height: 24px;
+    text-decoration: none;
+    font-stretch: 105%;
+    font-weight: 400;
+    transition: 0.2s; 
+}
+
+.legal-links a:hover {
+    color: rgba(252, 252, 253, 0.7);
+}
+
+
+.lang-selector {
+    margin-left: auto; 
+    position: relative;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(252, 252, 253);
+    background: rgba(24, 29, 37, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    padding: 10px 16px; 
+    cursor: pointer;
+    transition: all 0.25s ease;
+    stroke: currentColor; 
+}
+
+.lang-btn svg {
+    display: block;
+    width: 16px; 
+    height: 16px;
+    transition: all 0.25s ease;
+}
+
+
+.lang-btn:hover {
+    background-color: rgb(252, 252, 253); 
+    color: rgb(2, 2, 3); 
+    border-color: rgb(252, 252, 253);
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 4px); 
+    right: 0;
+    background-color: rgb(24, 29, 37); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+    min-width: 120px;
+    z-index: 100;
+    display: none; 
+}
+
+.lang-dropdown::before {
+    content: '';
+    position: absolute;
+    top: -10px; 
+    left: 0;
+    width: 100%;
+    height: 10px;
+}
+
+.lang-selector:hover .lang-dropdown {
+    display: block;
+}
+
+.lang-dropdown a {
+    display: block;
+    padding: 10px 16px; 
+    color: rgb(252, 252, 253);
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.lang-dropdown a:hover {
+    background-color: blue;
+}
+
+.lang-dropdown a.active {
+    background-color: transparent; 
+    color: rgb(252, 252, 253);
+}
+
+.footer-notice {
+    color: rgba(252, 252, 253, 0.7); 
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 35px; 
+    text-align: left; 
+}
